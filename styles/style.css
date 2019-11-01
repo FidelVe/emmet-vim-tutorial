@@ -57,7 +57,7 @@ body {
 .top-header > h1 {
   margin-left: 10px;
 }
-.header-menu {
+#header-menu {
   display: none;
 }
 .small-image,
@@ -130,16 +130,21 @@ kbd {
     flex-flow: row nowrap;
     align-items: center;
   }
-  .header-menu {
+  #header-menu {
     display: block;
     margin-left: auto;
     background-image: url("../images/ic_menu_white_48dp.png");
     width: 48px;
     height: 48px;
   }
-  .header-menu:hover {
-    /* background-color: #fff; */
+  #header-menu:hover {
     background-image: url("../images/ic_menu_black_48dp.png");
+  }
+  #header-menu.open {
+    background-image: url("../images/ic_close_white_48dp.png");
+  }
+  #header-menu.open:hover {
+    background-image: url("../images/ic_close_black_48dp.png");
   }
   #main-doc {
     flex: 1 1 auto;
