@@ -11,6 +11,5 @@ const classExpand = "expand";
 function toggleMenuView(event) {
   // toggles the height of the navbar
   let navbar = this.parentNode.parentNode;
-  console.log(navbar.className);
   navbar.className = navbar.className === "" ? classExpand : "";
 }
